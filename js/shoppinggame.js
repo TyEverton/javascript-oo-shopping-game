@@ -27,8 +27,9 @@ function Product (id, name, price, expiryDate) {
 }
 
 // Complete the dateDiff function
-const dateDiff = (date1, date2) => {};
-
+const dateDiff = (date1, date2) => {
+    return date1.getDate() - date2.getDate()
+};
 // Here, use Object.defineProperty to create property - daysToExpire
 
 // Add method getDetails to Product here
