@@ -5,9 +5,18 @@ const score = 0
 const items = 0
 // Define the player object here
 let player = {
-    name: "unknown",
-    score: 0,
-    items: 0
+    name,
+    score,
+    items,
+    getCurrentScore() {
+    return this.score
+    },
+    addPoints(points) {
+     this.score = this.score + points
+    },
+    deductPoints(points) {
+     this.score = this.score - points
+    }
 }
 // Define the Product class - write the Constructor function for Product class here
 
