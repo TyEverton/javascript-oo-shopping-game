@@ -19,7 +19,7 @@ let player = {
     }
 }
 // Define the Product class - write the Constructor function for Product class here
-function Product () {
+function Product (id, name, price, expiryDate) {
     this.id = id,
     this.name = name,
     this.price = price,
