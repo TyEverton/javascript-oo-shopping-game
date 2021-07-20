@@ -211,11 +211,15 @@ function loadMasterData() {
 }
 
 // Complete this function
-const findProductById = (id) => {};
+const findProductById = (id) => {
+    return function (product) {
+        return product.id == id
+    }
+};
 
 // Complete this function
 const generateProductId = () => {};
-
+    return Math.floor(Math.random() * 20) + 1
 
 const getProduct = (prodList, pId) => {
     return prodList.find(findProductById(pId));
