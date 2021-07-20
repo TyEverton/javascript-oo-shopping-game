@@ -286,7 +286,7 @@ function init(data) {
         console.log("=============================================================================================\n");
 
         rl.question("What's your name? ", function (name) {
-            // Assign the player object's name property to the user entered name here
+            this.name = rl.question.value
             console.log(`Welcome ${player.name} !!!`.blue);
             start(data);
         });
