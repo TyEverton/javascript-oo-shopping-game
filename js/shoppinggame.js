@@ -30,6 +30,11 @@ function Product (id, name, price, expiryDate) {
 const dateDiff = (date1, date2) => {
     return date1.getDate() - date2.getDate()
 };
+
+// function dateDiff(date1, date2){
+//     return date1.getDate() - date2.getDate()
+// } Arrow function above is the same as this regular function
+
 // Here, use Object.defineProperty to create property - daysToExpire
 
 // Add method getDetails to Product here
