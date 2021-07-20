@@ -38,7 +38,7 @@ Object.defineProperty(Product.prototype, 'daysToExpire', {
     }
 })
 // Add method getDetails to Product here
-dateDiff (this.expiryDate, newDate()) 
+// dateDiff (this.expiryDate, newDate()) 
 // Define the MagicProduct class here
 
 // Establish inheritance between Product() & MagicProduct() here
