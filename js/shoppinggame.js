@@ -19,21 +19,17 @@ let player = {
     }
 }
 // Define the Product class - write the Constructor function for Product class here
-function Product (id, name, price, expiryDate) {
-    this.id = id,
-    this.name = name,
-    this.price = price,
+function Product(id, name, price, expiryDate) {
+    this.id = id;
+    this.name = name;
+    this.price = price;
     this.expiryDate = expiryDate
 }
 
 // Complete the dateDiff function
-const dateDiff = (date1, date2) => {
+function dateDiff(date1, date2){
     return date1.getDate() - date2.getDate()
-};
-
-// function dateDiff(date1, date2){
-//     return date1.getDate() - date2.getDate()
-// } Arrow function above is the same as this regular function
+}
 
 // Here, use Object.defineProperty to create property - daysToExpire
 
