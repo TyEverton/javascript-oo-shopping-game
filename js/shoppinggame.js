@@ -46,7 +46,7 @@ Product.prototype.getDetails = function() {
     return `Product Name: ${this.name} , Product Price: ${this.price}`
 }
 // Define the MagicProduct class here
-function MagicProduct (id, name, price, expiryDate, points, isBonus) {
+function MagicProduct (points, isBonus) {
     Product.call(this.id, this.name, this.price, this.expiryDate)
     this.points = points;
     this.isBonus = isBonus
