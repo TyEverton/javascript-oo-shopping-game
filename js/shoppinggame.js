@@ -29,7 +29,6 @@ function Product(id, name, price, expiryDate) {
 // Complete the dateDiff function
 const dateDiff = (date1, date2) => {
     let timeDiff = Math.abs(date2.getTime() - date1.getTime())
-
     let diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24))
 
     return diffDays
@@ -57,7 +56,7 @@ MagicProduct.prototype = Object.create(Product.prototype)
 // Define Rating class here~
 class Rating {
     constructor(){
-        this.rate = "";
+        this.rate = ""
     }
     set rating(value) {
         if (value > 1 && value <= 4) {
@@ -256,7 +255,11 @@ const findPointsToBill = (roundedTotal) => {
 
 // Complete this function
 const findPointsForExpDate = (prod) => {
-    return prod.daysToExpire < 30 ? 10 : 0
+    if(prod.daysToExpire < 30) {
+        return 10
+    } else {
+        return 0
+    }
 };
 
 
